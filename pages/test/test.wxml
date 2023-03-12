@@ -1,0 +1,14 @@
+
+<view class="qiun-charts">
+  <canvas   canvas-id="canvasLineA" id="canvasLineA" class="charts" bindtouchstart="touchLineA" bindtouchmove="moveLineA" bindtouchend="touchEndLineA"></canvas>
+
+<scroll-view scroll-x class="bg-cyan nav">
+  <view class="layout_horizontal">
+    <button class=" {{index==TabCur?'text-white cur':''}}" wx:for="{{chartClass}}" wx:key bindtap="tabSelect" data-id="{{index}}" style="font-size: small; width: 186rpx; height: 80rpx; display: block; box-sizing: border-box">
+      {{item}}
+    </button>
+  </view>
+</scroll-view> 
+<button  bindtap="refresh">刷新</button>
+<text></text>
+</view>

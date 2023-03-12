@@ -1,3 +1,6 @@
 {
- 
+  "backgroundColor":"#F9FAFB",
+  "usingComponents": {
+    "mp-dialog": "weui-miniprogram/dialog/dialog"
+  }
 }

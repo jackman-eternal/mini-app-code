@@ -1,12 +1,34 @@
 {
-  "pages":[
-    "pages/index/index"
-    ],
-    "window":{
-      "backgroundTextStyle": "light",
-      "navigationBarBackgroundColor": "#fff",
-      "navigationBarTitleText": "ESP8266小灯",
-      "navigationBarTextStyle": "black"
-    }, 
+  "pages": [
+    "pages/index/index",
+    "pages/test/test"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#6666FF",
+
+    "navigationBarTitleText": "淡水鱼养殖"
+
+    
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "image/部门概况 (1).png",
+        "selectedIconPath": "image/部门概况.png"
+      },
+    
+      {
+        "pagePath": "pages/test/test",
+        "text": "数据显示",
+        "iconPath": "image/学生 (1).png",
+        "selectedIconPath": "image/学生.png"
+      }
+    ]
+  },
+  "useExtendedLib": {
+    "weui":true
+  },
   "sitemapLocation": "sitemap.json"
 }

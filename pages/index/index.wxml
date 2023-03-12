@@ -1,6 +1,22 @@
-<view class="button-sp-are">
-  <button class="weui-btn" type="primary" size="mini"  bindtap="onClickOpen">开灯</button>
-  <button type="warn" size="mini"  bindtap="onClickOff">关灯</button>
-  <button size="mini">温度：{{temperature}}℃</button>
-  <button size="mini">湿度：{{humidity}}</button>
-</view>
+<view >
+  <view >{{date1}} </view>
+  <block wx:if="{{hi}}">
+  <view  ><view>
+ <image src="../../image/fish.jpg" style="width: 654rpx; height: 605rpx; display: inline-block; box-sizing: border-box; position: absolute; left: 50rpx; top: 146rpx"></image></view>
+      <button class="weui-btn cu-btn bg-gradual-blue" type="primary" size="mini"  bindtap="Link" style="background: steelblue; width: 678rpx; height: 71rpx; display: inline-block; box-sizing: border-box; position: relative; left: 37rpx; top: 540rpx">连接</button>
+  </view></block>
+<block wx:if="{{nohi}}">
+  <view>
+ <image src="../../image/zhuo.jpg"  style="width: 162rpx; height: 141rpx; display: inline-block; box-sizing: border-box; position: absolute; z-index: 1; left: 0rpx; top: 73rpx"></image>
+ <image src="../../image/temperature.jpg"  style="width: 134rpx; height: 115rpx; display: block; box-sizing: border-box; position: absolute; z-index: 1; left: 0rpx; top: 214rpx"></image>
+ <image src="../../image/O2.png"  style="width: 134rpx; height: 115rpx; display: block; box-sizing: border-box; position: absolute; z-index: 1; left: 15rpx; top: 359rpx"></image>
+ <image src="../../image/PH.png"  style="width: 134rpx; height: 118rpx; display: block; box-sizing: border-box; position: absolute; z-index: 1; left: 15rpx; top: 474rpx"></image>
+
+  <button size="mini" type="default" style="-color: red; position: relative; left: 162rpx; top: 71rpx">浑浊度：{{zhuo}}</button></view>
+  <button size="mini" style="position: relative; left: 150rpx; top: 132rpx">温度：{{temperature}}℃</button>
+  <button size="mini" style="position: relative; left: 150rpx; top: 183rpx">含氧量：{{O2}}mg/L</button>
+  <button size="mini" style="position: relative; left: 150rpx; top: 247rpx">PH值{{pH}}</button>  
+  <button size="mini" bindtap="hidden" style="position: relative; left: 0rpx; top: 305rpx; width: 750rpx; height: 71rpx; display: inline-block; box-sizing: border-box">返回</button>
+</block>
+</view> 
+
